@@ -10,7 +10,9 @@ public class KataMain {
 		
 		String result2 = Kata.createPhoneNumber(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0});
 		System.out.println(result2);
-
+		
+		String result3 = Kata.addLetters("n", "z", "z", "d", "i", "y");
+		System.out.println(result3);		
 	}
 
 }
