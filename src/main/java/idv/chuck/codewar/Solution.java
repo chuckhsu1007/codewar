@@ -1,7 +1,12 @@
 package idv.chuck.codewar;
 
-//Who likes it?
+
 public class Solution {
+	/**
+	 * Who likes it?
+	 * @param names
+	 * @return
+	 */
 	public static String whoLikesIt(String... names) {
 		switch (names.length) {
 		case 0:
@@ -16,4 +21,28 @@ public class Solution {
 			return String.format("%s, %s and %d others like this", names[0], names[1], names.length - 2);
 		}
 	}
+	
+	/**
+	 * Two Sum
+	 * @param numbers
+	 * @param target
+	 * @return
+	 */
+	public static int[] twoSum(int[] numbers, int target)
+    {
+		int result[] = null;
+		for(int firstLoopIndex = 0; firstLoopIndex < numbers.length -1; firstLoopIndex++) {
+			for(int secondLoopIndex = 1; secondLoopIndex < numbers.length ; secondLoopIndex++) {
+				if(target == numbers[firstLoopIndex] + numbers[secondLoopIndex]) {
+					result = new int[2];
+					result[0] = firstLoopIndex;
+					result[1] = secondLoopIndex;
+					return result;
+				}
+			}
+		}
+		
+        return result;
+    }
+	
 }
